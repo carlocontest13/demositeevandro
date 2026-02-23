@@ -1,0 +1,121 @@
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .perfil .social-links {
+    gap: 20px;
+  }
+  .perfil .social-links a {
+    font-size: 1.4rem;
+  }
+}
+
+/* ==== Responsividade ==== */
+@media (max-width: 768px) {
+  .pesquisa-card img { height: 160px; }
+  .pesquisa-card .texto { padding: 14px 16px; }
+  .pesquisa-card h3 { font-size: 1.1rem; }
+  .btn-leia { padding: 6px 14px; font-size: 0.85rem; }
+}
+/* ===== RESPONSIVIDADE ===== */
+
+/* Tablets (atÃƒÂ© 1024px) */
+@media (max-width: 1024px) {
+  .perfil-box {
+    flex-direction: column;
+    text-align: center;
+  }
+  .perfil-foto {
+    width: 40%;
+  }
+  .box {
+    flex: 0 0 45%; /* 2 boxes lado a lado */
+  }
+}
+
+/* Celulares (atÃƒÂ© 768px) */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  /* Hero */
+  .hero-inner h1 {
+    font-size: 2rem;
+  }
+  .hero-inner .subtitle {
+    font-size: 1rem;
+  }
+  /* Perfil */
+  .perfil-foto {
+    width: 80%;
+  }
+  /* Sliders - 1 por vez */
+  .box {
+    flex: 0 0 100%;
+    margin-right: 10px;
+  }
+  .slider-colecao .prev,
+  .slider-colecao .next {
+    font-size: 24px;
+    padding: 6px 12px;
+  }
+}
+/* Celular - esconde sidebar */
+@media (max-width: 768px) {
+  .portfolio-layout {
+    flex-direction: column;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+/* --- Ajuste para mobile (tipo streaming) --- */
+@media (max-width: 768px) {
+  /* esconder os botÃƒÂµes no mobile */
+  .slider-colecao .prev,
+  .slider-colecao .next {
+    display: none;
+  }
+  section#contato {
+    width: 100%;
+}
+  /* transformar a galeria em scroll horizontal */
+  .colecao-inner {
+    display: flex;
+    overflow-x:overlay;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    
+    gap: 12px;
+    padding-bottom: 10px;
+  }
+
+  /* cards menores estilo Netflix */
+  .colecao-inner .box {
+    flex: 0 0 70%; /* ocupa 70% da largura da tela */
+    min-width: 310px;
+    scroll-snap-align: start;
+    border-radius: 8px;
+    max-height: 200px;
+  }
+
+  .colecao-inner img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .colecao-section {
+    min-height:360px; 
+    max-height:500px;
+    
+  }
+  .box .info a {
+    display:none;
+    margin-top: 6px;
+    background: #fff;
+    color: #111;
+    padding: 6px 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+}

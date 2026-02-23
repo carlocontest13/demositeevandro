@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portifólio de Artigos</title>
+
+<!-- Fonte moderna -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="artigos.css"> 
+<link rel="stylesheet" href="responsive/menu2.css" />    
+ 
+
+
+</head>
+<body>
+
+<header class="site-header">
+      <button class="menu-toggle">☰</button>
+      <nav class="nav">
+        <div class= "menuit"><a href="index.html#sobre">Sobre mim</a></div>
+        <div class= "menuit"><a href="index.html#fotografico">Portfólio Fotográfico</a></div>
+        <div class= "menuit"><a href="index.html#pesquisa">Portfólio de Pesquisa</a></div>
+      </nav>
+    </header>
+
+<!-- ========================= -->
+<!-- PÁGINA INICIAL (LISTA) -->
+<!-- ========================= -->
+
+<main class="container article-list" id="home">
+
+  <article>
+    <a href="#artigo1" onclick="showArticle('artigo1')">
+      <h2>Futebol, Identidade e Periferia</h2>
+      <p>As marcas distintivas no circuito do futebol de várzea em Taboão da Serra (SP) e suas expressões culturais e simbólicas no cotidiano urbano.</p>
+      <small>20 fev 2026 · 7 min de leitura</small>
+    </a>
+  </article>
+
+  <article>
+    <a href="#artigo2" onclick="showArticle('artigo2')">
+      <h2>As Camisas e suas Marcas - Museu do Futebol</h2>
+      <p>Um estudo sobre corporeidade e performance nos rituais religiosos afro-brasileiros, com ênfase nas interações simbólicas.</p>
+      <small>10 fev 2026 · 5 min de leitura</small>
+    </a>
+  </article>
+  <article>
+    <a href="#artigo3" onclick="showArticle('artigo3')">
+      <h2>Teste com imagens</h2>
+      <p>Um estudo sobre corporeidade e performance nos rituais religiosos afro-brasileiros, com ênfase nas interações simbólicas.</p>
+      <small>10 fev 2026 · 5 min de leitura</small>
+    </a>
+  </article>
+
+</main>
+
+<!-- ========================= -->
+<!-- ARTIGO 1 -->
+<!-- ========================= -->
+
+<main class="container article-content" id="artigo1" style="display:none;">
+
+  <a href="#" class="back" onclick="goHome()">← Voltar</a>
+
+  <h1 id="textoCompartilhar">Futebol, Identidade e Periferia</h1>
+  <div class="meta">20 fev 2026 · 7 min de leitura · 
+    <button class="share-btn" onclick="sharePage()">      Compartilhar</button></div>
+
+
+  <div class="article-layout">
+    <aside class="toc">
+    <h3>Sumário</h3>
+    <ul>
+      <li><a href="#intro">Introdução</a></li>
+      <li><a href="#imagem">A imagem latente</a></li>
+      <li><a href="#cadeia">Cadeia operatória</a></li>
+      <li><a href="#gesto">O gesto técnico</a></li>
+      <li><a href="#conclusao">Conclusão</a></li>
+    </ul>
+  </aside>
+
+</div>
+
+  <p>
+    As marcas distintivas no circuito do futebol de várzea em Taboão da Serra (SP) e suas expressões culturais e simbólicas no cotidiano urbano.
+
+  </p>
+
+  <p>
+    Entre a captura e a revelação, há um intervalo invisível onde a imagem permanece latente.
+  </p>
+
+<section id="intro">
+  <h2>A imagem latente</h2>
+</section>
+
+  <p>
+    A imagem não aparece imediatamente. Ela precisa de um processo químico que a faça emergir.
+  </p>
+
+  <blockquote>
+    A fotografia não captura o instante — ela o transforma.
+  </blockquote>
+
+  <section class="references">
+  <h2>Referências</h2>
+  <ol>
+    <li>
+      SIMONDON, Gilbert. <em>Do modo de existência dos objetos técnicos</em>. 
+      São Paulo: Editora X, 2007.
+    </li>
+    <li>
+      LEMMONIER, Pierre. “Elements for an Anthropology of Technology”.
+      <em>Anthropological Papers</em>, 1986.
+    </li>
+    <li>
+      CESARINO, Letícia. <em>O mundo do avesso</em>. São Paulo: Ubu, 2022.
+    </li>
+  </ol>
+</section>
+
+</main>
+
+<!-- ========================= -->
+<!-- ARTIGO 2 -->
+<!-- ========================= -->
+
+<main class="container article-content" id="artigo2" style="display:none;">
+
+  <a href="#" class="back" onclick="goHome()">← Voltar</a>
+
+  <h1>As Camisas e suas Marcas - Museu do Futebol</h1>
+  <div class="meta">10 fev 2026 · 5 min de leitura</div>
+
+  <p>
+    Um estudo sobre corporeidade e performance nos rituais religiosos afro-brasileiros, com ênfase nas interações simbólicas.
+  </p>
+
+  <p>
+    A fotografia analógica é um processo distribuído no tempo.
+  </p>
+
+</main>
+
+<!-- ========================= -->
+<!-- ARTIGO 3 -->
+<!-- ========================= -->
+
+<main class="container article-content" id="artigo3" style="display:none;">
+
+  <a href="#" class="back" onclick="goHome()">← Voltar</a>
+
+  <h1>Futebol, Identidade e Periferia</h1>
+  <div class="meta">20 fev 2026 · 7 min de leitura</div>
+
+  <p>
+    As marcas distintivas no circuito do futebol de várzea em Taboão da Serra (SP) e suas expressões culturais e simbólicas no cotidiano urbano.
+
+  </p>
+
+  <figure class="image">
+  <img src="assets/capa2.jpg" alt="Descrição da imagem">
+  <figcaption>Laboratório de revelação em São Paulo.</figcaption>
+  </figure>
+
+  <p>
+    Entre a captura e a revelação, há um intervalo invisível onde a imagem permanece latente.
+  </p>
+
+  <h2>A imagem latente</h2>
+
+  <p>
+    A imagem não aparece imediatamente. Ela precisa de um processo químico que a faça emergir.
+  </p>
+
+  <blockquote>
+    A fotografia não captura o instante — ela o transforma.
+  </blockquote>
+
+</main>
+
+
+
+
+<script>
+
+// ===== MENU HAMBURGUER =====
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.nav');
+
+// Abre/fecha o menu
+menuToggle.addEventListener('click', () => {
+  nav.classList.toggle('active');
+});
+
+// Fecha o menu ao clicar em qualquer link
+document.querySelectorAll('.nav a').forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('active');
+  });
+});
+
+
+function showArticle(id) {
+
+  document.getElementById("home").style.display = "none";
+
+  document.querySelectorAll(".article-content").forEach(el => {
+    el.style.display = "none";
+  });
+
+  document.getElementById(id).style.display = "block";
+
+  // ATUALIZA A URL
+  window.location.hash = id;
+
+  window.scrollTo(0,0);
+}
+
+function goHome() {
+
+  document.querySelectorAll(".article-content").forEach(el => {
+    el.style.display = "none";
+  });
+
+  document.getElementById("home").style.display = "block";
+
+  // REMOVE O HASH
+  history.pushState("", document.title, window.location.pathname);
+
+  window.scrollTo(0,0);
+}
+
+function sharePage() {
+
+  const elemento = document.getElementById("textoCompartilhar");
+
+  if (!elemento) {
+    alert("Texto não encontrado.");
+    return;
+  }
+
+  const texto = elemento.innerText.trim();
+
+  const mensagem =
+    `"${texto}"\n\nLeia o artigo completo:\n${window.location.href}`;
+
+  if (navigator.share) {
+    navigator.share({
+      text: mensagem
+    });
+  } else {
+    navigator.clipboard.writeText(mensagem);
+    alert("Texto copiado com link!");
+  }
+}
+
+/* 👇 AQUI — depois das funções */
+window.addEventListener("load", function () {
+
+  const hash = window.location.hash.replace("#", "");
+
+  if (hash && document.getElementById(hash)) {
+    showArticle(hash);
+  }
+
+});
+</script>
+
+</body>
+</html>

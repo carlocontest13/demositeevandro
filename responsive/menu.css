@@ -1,0 +1,120 @@
+/* ====== MENU MODERNO DESKTOP ====== */
+@media (min-width: 769px) {
+  .site-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    border-bottom: 1px solid #222;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  }
+  .site-footer{
+  text-align:center;
+  padding: 5px 16px;
+  background:#fafafa;
+  border-top:1px solid #eee;
+  font-size:13px;
+  height: 55px;
+}
+  
+  .nav {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav a {
+    color: #e4e4e4;
+    font-weight: 600;
+    font-size: 1rem;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+
+  .nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s ease;
+  }
+
+  .nav a:hover {
+    color: #fff;
+  }
+
+  .nav a:hover::after {
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
+
+/* ====== MENU FULLSCREEN MOBILE ====== */
+@media (max-width: 768px) {
+  .site-header{
+    height: 70px;
+  }
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    position: fixed;
+    left: 180px;
+    z-index: 2001;
+    cursor: pointer;
+  }
+
+  .nav {
+    position: fixed;
+    inset: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 2000;
+    transition: opacity 0.4s ease;
+  }
+
+  .nav.active {
+    display: flex;
+    animation: fadeIn 0.4s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .nav .menuit {
+    margin: 20px 0;
+  }
+
+  .nav a {
+    color: #fff;
+    font-size: 1.8rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .nav a:hover {
+    color: #aaa;
+  }
+  .site-footer{
+    text-align:center;
+    padding: 1px 16px;
+    background:#fafafa;
+    border-top:1px solid #eee;
+    font-size:8px;
+    height: 55px;
+  }
+}

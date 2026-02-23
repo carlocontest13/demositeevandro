@@ -1,0 +1,80 @@
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 900px) {
+  .main-image,
+  .description,
+  .text-block {
+    max-width: 100%;
+  }
+  .text-block h2 {
+    font-size: 26px;
+  }
+  .text-block p {
+    font-size: 16px;
+  }
+  .description h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .thumbnails img {
+    width: 65px;
+    height: 50px;
+  }
+  .text-block h2 {
+    font-size: 22px;
+  }
+  .text-block p,
+  .description p {
+    font-size: 14px;
+  }
+}
+/* ======= Layout de duas colunas (desktop) ======= */
+@media (min-width: 1025px) {
+  .gallery-card {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr; /* galeria/descriÃ§Ã£o e texto */
+    align-items: start;
+    gap: 40px;
+    max-width: 100%;
+    margin: 0 auto 100px;
+  }
+
+  /* Coluna esquerda: Galeria + DescriÃ§Ã£o */
+  .main-image {
+    grid-column: 1;
+  }
+
+  .description {
+    grid-column: 1;
+    margin-top: 20px;
+    width: 90%;
+    margin-top: -50%;
+    /* align-items: center; */
+    text-align: center;
+  }
+
+  /* Coluna direita: texto principal */
+  .text-block {
+    grid-column: 2;
+    align-self: start;
+    text-align: left;
+    background: #fff;
+    padding: 20px 28px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  }
+
+  .text-block h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  .text-block p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #333;
+  }
+}
+	

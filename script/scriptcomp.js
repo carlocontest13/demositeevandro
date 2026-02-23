@@ -1,33 +1,36 @@
- const modal = document.getElementById('modal');
+document.addEventListener("DOMContentLoaded", function() {
+  const modal = document.getElementById('modal');
   const modalImg = modal.querySelector('img');
   const closeModal = document.getElementById('closeModal');
-
-  document.querySelectorAll('.main-image img, .thumbnails img').forEach(img => {
+  // Abrir modal ao clicar na imagem principal
+  document.querySelectorAll('.main-image img').forEach(img => {
     img.addEventListener('click', () => {
       modal.classList.add('active');
-      modalImg.src = img.dataset.full || img.src;
+      modalImg.src = img.src;
     });
   });
-
-  closeModal.addEventListener('click', () => {
-    modal.classList.remove('active');
-    modalImg.src = '';
+  // Trocar imagem principal ao clicar na miniatura
+  document.querySelectorAll('.thumbnails img').forEach(thumb => {
+    thumb.addEventListener('click', function(e) {
+      e.stopPropagation(); // evita abrir modal junto
+      const mainImg = this.closest('.main-image').querySelector('img');
+      mainImg.src = this.dataset.full;
+    });
   });
-  modal.addEventListener('click', e => {
-    if(e.target === modal){
-      modal.classList.remove('active');
-      modalImg.src = '';
+  // Fechar modal
+closeModal.addEventListener('click', () => {
+modal.classList.remove('active');
+modalImg.src ='';
+  });
+modal.addEventListener('click', e => {
+if (e.target ===modal) {
+modal.classList.remove('active');
+modalImg.src ='';
     }
   });
+});
 
-  document.querySelectorAll('.thumbnails img').forEach(thumb => {
-    thumb.addEventListener('click', e => {
-      const mainImg = e.target.closest('.main-image').querySelector('img:first-child');
-      mainImg.src = e.target.dataset.full;
-    });
-	
-  });
-  
+
   // ===== MENU HAMBURGUER =====
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav');

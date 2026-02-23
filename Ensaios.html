@@ -25,12 +25,18 @@
     <div class="main-image">
       <img src="assets/capa1.webp" alt="Ensaio 1 - Principal" id="main1">
       <div class="thumbnails">
-		<img src="assets/capa1.webp" data-full="assets/capa3.jpg" alt="Thumb 1">
-        <img src="assets/capa3.jpg" data-full="assets/capa1.jpg" alt="Thumb 1">
-        <img src="assets/capa2.jpg" data-full="assets/capa4.jpg" alt="Thumb 2">
-        <img src="assets/capa4.jpg" data-full="assets/capa2.jpg" alt="Thumb 3">
+		    <img src="assets/capa1.webp" data-full="assets/capa1.webp" alt="Thumb 1">
+        <img src="assets/capa3.jpg" data-full="assets/capa3.jpg" alt="Thumb 1">
+        <img src="assets/capa2.jpg" data-full="assets/capa2.jpg" alt="Thumb 2">
+        <img src="assets/capa4.jpg" data-full="assets/capa4.jpg" alt="Thumb 3">
       </div>
     </div>
+
+    <!-- MODAL -->
+<div id="modal" class="modal">
+  <span id="closeModal" class="close">&times;</span>
+  <img src="" alt="Imagem ampliada">
+</div>
 	
     <div class="text-block">
       <h2>Ensaio Urbano</h2>
@@ -130,59 +136,7 @@
     <p>© Developed by Carlos Conceição - carloseduardocon@outlook.com | 2025.</p>
 	</footer>
 
-<!-- <script>
-  const modal = document.getElementById('modal');
-  const modalImg = modal.querySelector('img');
-  const closeModal = document.getElementById('closeModal');
-
-  document.querySelectorAll('.main-image img, .thumbnails img').forEach(img => {
-    img.addEventListener('click', () => {
-      modal.classList.add('active');
-      modalImg.src = img.dataset.full || img.src;
-    });
-  });
-
-  closeModal.addEventListener('click', () => {
-    modal.classList.remove('active');
-    modalImg.src = '';
-  });
-  modal.addEventListener('click', e => {
-    if(e.target === modal){
-      modal.classList.remove('active');
-      modalImg.src = '';
-    }
-  });
-
-  document.querySelectorAll('.thumbnails img').forEach(thumb => {
-    thumb.addEventListener('click', e => {
-      const mainImg = e.target.closest('.main-image').querySelector('img:first-child');
-      mainImg.src = e.target.dataset.full;
-    });
-	
-  });
-  
-  // ===== MENU HAMBURGUER =====
-const menuToggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.nav');
-
-// Abre/fecha o menu
-menuToggle.addEventListener('click', () => {
-  nav.classList.toggle('active');
-});
-
-// Fecha o menu ao clicar em qualquer link
-document.querySelectorAll('.nav a').forEach(link => {
-  link.addEventListener('click', () => {
-    nav.classList.remove('active');
-  });
-});
-
-</script> -->
-
-
   <script src="script/scriptcomp.js"></script>
-
-
 
 </body>
 </html>
